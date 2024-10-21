@@ -190,7 +190,7 @@ bool WindowInverter::MatchesDeprecatedRule(PHLWINDOW window)
             }
 
             if (rule.bFullscreen != -1) {
-                if (window->isFullscreen() != rule.bFullscreen)
+                if (window->m_bIsFullscreen() != rule.bFullscreen)
                     continue;
             }
 
